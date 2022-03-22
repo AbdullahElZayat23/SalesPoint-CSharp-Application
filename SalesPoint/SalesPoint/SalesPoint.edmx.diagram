@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="87ab3d4547a04d0f8ac8b8a944b42de4" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="salesPointModel.company" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="salesPointModel.Contain" Width="1.5" PointX="8.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="salesPointModel.customer" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="salesPointModel.dismissingPermisionProduct" Width="1.5" PointX="7.5" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="salesPointModel.dismissingPermission" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="salesPointModel.measureUnit" Width="1.5" PointX="5.25" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="salesPointModel.product" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="salesPointModel.Product_unit" Width="1.5" PointX="7.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="salesPointModel.supplier" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="salesPointModel.supplyingPermisionProduct" Width="1.5" PointX="7.5" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="salesPointModel.supplyingPermission" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="salesPointModel.sysdiagram" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="salesPointModel.warehouse" Width="1.5" PointX="3" PointY="8.75" IsExpanded="true" />
+        <AssociationConnector Association="salesPointModel.FK_customer_company" ManuallyRouted="false" />
+        <AssociationConnector Association="salesPointModel.FK_supplier_company" ManuallyRouted="false" />
+        <AssociationConnector Association="salesPointModel.FK_warehouse_company" ManuallyRouted="false" />
+        <AssociationConnector Association="salesPointModel.FK_Contain_product" ManuallyRouted="false" />
+        <AssociationConnector Association="salesPointModel.FK_Contain_warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="salesPointModel.FK_dismissingPermission_customer" ManuallyRouted="false" />
+        <AssociationConnector Association="salesPointModel.FK_dismissingPermisionProducts_dismissingPermission" ManuallyRouted="false" />
+        <AssociationConnector Association="salesPointModel.FK_dismissingPermisionProducts_product" ManuallyRouted="false" />
+        <AssociationConnector Association="salesPointModel.FK_dismissingPermission_warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="salesPointModel.FK_Product_unit_measureUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="salesPointModel.FK_Product_unit_product" ManuallyRouted="false" />
+        <AssociationConnector Association="salesPointModel.FK_supplyingPermisionProducts_product" ManuallyRouted="false" />
+        <AssociationConnector Association="salesPointModel.FK_supplyingPermission_supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="salesPointModel.FK_supplyingPermisionProducts_supplyingPermission" ManuallyRouted="false" />
+        <AssociationConnector Association="salesPointModel.FK_supplyingPermission_warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="salesPointModel.FK_product_warehouse" />
+        <AssociationConnector Association="salesPointModel.FK_supplyingPermission_warehouse1" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

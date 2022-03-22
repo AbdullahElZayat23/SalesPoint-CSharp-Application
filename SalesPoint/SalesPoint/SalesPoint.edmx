@@ -1,0 +1,1193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="salesPointModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="company">
+          <Key>
+            <PropertyRef Name="cm_name" />
+          </Key>
+          <Property Name="cm_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="cmp_address" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Contain">
+          <Key>
+            <PropertyRef Name="W_code" />
+            <PropertyRef Name="p_code" />
+          </Key>
+          <Property Name="W_code" Type="int" Nullable="false" />
+          <Property Name="p_code" Type="int" Nullable="false" />
+          <Property Name="quantity" Type="int" />
+          <Property Name="transfered" Type="bit" />
+        </EntityType>
+        <EntityType Name="customer">
+          <Key>
+            <PropertyRef Name="cust_id" />
+          </Key>
+          <Property Name="cust_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="cust_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="cust_fax" Type="nvarchar" MaxLength="10" />
+          <Property Name="cust_email" Type="nvarchar" MaxLength="50" />
+          <Property Name="cust_website" Type="nvarchar" MaxLength="200" />
+          <Property Name="cust_phone" Type="nvarchar" MaxLength="11" />
+          <Property Name="cust_mobile" Type="nvarchar" MaxLength="11" />
+          <Property Name="cmp_name" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="dismissingPermisionProducts">
+          <Key>
+            <PropertyRef Name="permission_id" />
+            <PropertyRef Name="p_code" />
+          </Key>
+          <Property Name="permission_id" Type="int" Nullable="false" />
+          <Property Name="p_code" Type="int" Nullable="false" />
+          <Property Name="quantity" Type="int" />
+        </EntityType>
+        <EntityType Name="dismissingPermission">
+          <Key>
+            <PropertyRef Name="permission_id" />
+          </Key>
+          <Property Name="permission_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="cust_id" Type="int" />
+          <Property Name="w_id" Type="int" />
+          <Property Name="Permission_Date" Type="date" />
+        </EntityType>
+        <EntityType Name="measureUnit">
+          <Key>
+            <PropertyRef Name="m_id" />
+          </Key>
+          <Property Name="m_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="m_unit" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="product">
+          <Key>
+            <PropertyRef Name="p_code" />
+          </Key>
+          <Property Name="p_code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="p_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="quantity" Type="int" />
+          <Property Name="production_date" Type="date" />
+          <Property Name="expire_duration" Type="int" />
+          <Property Name="w_id" Type="int" />
+          <Property Name="transfered" Type="bit" />
+        </EntityType>
+        <EntityType Name="Product_unit">
+          <Key>
+            <PropertyRef Name="p_code" />
+            <PropertyRef Name="m_id" />
+          </Key>
+          <Property Name="p_code" Type="int" Nullable="false" />
+          <Property Name="m_id" Type="int" Nullable="false" />
+          <Property Name="dummy" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="supplier">
+          <Key>
+            <PropertyRef Name="sup_id" />
+          </Key>
+          <Property Name="sup_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sup_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="sup_fax" Type="nvarchar" MaxLength="10" />
+          <Property Name="sup_email" Type="nvarchar" MaxLength="50" />
+          <Property Name="sup_website" Type="nvarchar" MaxLength="200" />
+          <Property Name="sup_phone" Type="nvarchar" MaxLength="11" />
+          <Property Name="sup_mobile" Type="nvarchar" MaxLength="11" />
+          <Property Name="cmp_name" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="supplyingPermisionProducts">
+          <Key>
+            <PropertyRef Name="permission_id" />
+            <PropertyRef Name="p_code" />
+          </Key>
+          <Property Name="permission_id" Type="int" Nullable="false" />
+          <Property Name="p_code" Type="int" Nullable="false" />
+          <Property Name="productuction_date" Type="date" />
+          <Property Name="expire_duration" Type="int" />
+          <Property Name="quantity" Type="int" />
+        </EntityType>
+        <EntityType Name="supplyingPermission">
+          <Key>
+            <PropertyRef Name="permission_id" />
+          </Key>
+          <Property Name="permission_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sup_id" Type="int" />
+          <Property Name="w_id" Type="int" />
+          <Property Name="permission_date" Type="date" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="warehouse">
+          <Key>
+            <PropertyRef Name="w_id" />
+          </Key>
+          <Property Name="w_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="w_manager_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="w_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="w_address" Type="nvarchar" MaxLength="150" />
+          <Property Name="cmp_name" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Contain_product">
+          <End Role="product" Type="Self.product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Contain" Type="Self.Contain" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="product">
+              <PropertyRef Name="p_code" />
+            </Principal>
+            <Dependent Role="Contain">
+              <PropertyRef Name="p_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Contain_warehouse">
+          <End Role="warehouse" Type="Self.warehouse" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Contain" Type="Self.Contain" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="warehouse">
+              <PropertyRef Name="w_id" />
+            </Principal>
+            <Dependent Role="Contain">
+              <PropertyRef Name="W_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_customer_company">
+          <End Role="company" Type="Self.company" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="customer" Type="Self.customer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="company">
+              <PropertyRef Name="cm_name" />
+            </Principal>
+            <Dependent Role="customer">
+              <PropertyRef Name="cmp_name" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dismissingPermisionProducts_dismissingPermission">
+          <End Role="dismissingPermission" Type="Self.dismissingPermission" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="dismissingPermisionProducts" Type="Self.dismissingPermisionProducts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="dismissingPermission">
+              <PropertyRef Name="permission_id" />
+            </Principal>
+            <Dependent Role="dismissingPermisionProducts">
+              <PropertyRef Name="permission_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dismissingPermisionProducts_product">
+          <End Role="product" Type="Self.product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="dismissingPermisionProducts" Type="Self.dismissingPermisionProducts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="product">
+              <PropertyRef Name="p_code" />
+            </Principal>
+            <Dependent Role="dismissingPermisionProducts">
+              <PropertyRef Name="p_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dismissingPermission_customer">
+          <End Role="customer" Type="Self.customer" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="dismissingPermission" Type="Self.dismissingPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="customer">
+              <PropertyRef Name="cust_id" />
+            </Principal>
+            <Dependent Role="dismissingPermission">
+              <PropertyRef Name="cust_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dismissingPermission_warehouse">
+          <End Role="warehouse" Type="Self.warehouse" Multiplicity="0..1" />
+          <End Role="dismissingPermission" Type="Self.dismissingPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="warehouse">
+              <PropertyRef Name="w_id" />
+            </Principal>
+            <Dependent Role="dismissingPermission">
+              <PropertyRef Name="w_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_unit_measureUnit">
+          <End Role="measureUnit" Type="Self.measureUnit" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Product_unit" Type="Self.Product_unit" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="measureUnit">
+              <PropertyRef Name="m_id" />
+            </Principal>
+            <Dependent Role="Product_unit">
+              <PropertyRef Name="m_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_unit_product">
+          <End Role="product" Type="Self.product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Product_unit" Type="Self.Product_unit" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="product">
+              <PropertyRef Name="p_code" />
+            </Principal>
+            <Dependent Role="Product_unit">
+              <PropertyRef Name="p_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_product_warehouse">
+          <End Role="warehouse" Type="Self.warehouse" Multiplicity="0..1" />
+          <End Role="product" Type="Self.product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="warehouse">
+              <PropertyRef Name="w_id" />
+            </Principal>
+            <Dependent Role="product">
+              <PropertyRef Name="w_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_supplier_company">
+          <End Role="company" Type="Self.company" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="supplier" Type="Self.supplier" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="company">
+              <PropertyRef Name="cm_name" />
+            </Principal>
+            <Dependent Role="supplier">
+              <PropertyRef Name="cmp_name" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_supplyingPermisionProducts_product">
+          <End Role="product" Type="Self.product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="supplyingPermisionProducts" Type="Self.supplyingPermisionProducts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="product">
+              <PropertyRef Name="p_code" />
+            </Principal>
+            <Dependent Role="supplyingPermisionProducts">
+              <PropertyRef Name="p_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_supplyingPermisionProducts_supplyingPermission">
+          <End Role="supplyingPermission" Type="Self.supplyingPermission" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="supplyingPermisionProducts" Type="Self.supplyingPermisionProducts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="supplyingPermission">
+              <PropertyRef Name="permission_id" />
+            </Principal>
+            <Dependent Role="supplyingPermisionProducts">
+              <PropertyRef Name="permission_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_supplyingPermission_supplier">
+          <End Role="supplier" Type="Self.supplier" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="supplyingPermission" Type="Self.supplyingPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="supplier">
+              <PropertyRef Name="sup_id" />
+            </Principal>
+            <Dependent Role="supplyingPermission">
+              <PropertyRef Name="sup_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_supplyingPermission_warehouse">
+          <End Role="warehouse" Type="Self.warehouse" Multiplicity="0..1" />
+          <End Role="supplyingPermission" Type="Self.supplyingPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="warehouse">
+              <PropertyRef Name="w_id" />
+            </Principal>
+            <Dependent Role="supplyingPermission">
+              <PropertyRef Name="w_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_supplyingPermission_warehouse1">
+          <End Role="warehouse" Type="Self.warehouse" Multiplicity="0..1" />
+          <End Role="supplyingPermission" Type="Self.supplyingPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="warehouse">
+              <PropertyRef Name="w_id" />
+            </Principal>
+            <Dependent Role="supplyingPermission">
+              <PropertyRef Name="sup_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_warehouse_company">
+          <End Role="company" Type="Self.company" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="warehouse" Type="Self.warehouse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="company">
+              <PropertyRef Name="cm_name" />
+            </Principal>
+            <Dependent Role="warehouse">
+              <PropertyRef Name="cmp_name" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+        <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="salesPointModelStoreContainer">
+          <EntitySet Name="company" EntityType="Self.company" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Contain" EntityType="Self.Contain" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="customer" EntityType="Self.customer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="dismissingPermisionProducts" EntityType="Self.dismissingPermisionProducts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="dismissingPermission" EntityType="Self.dismissingPermission" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="measureUnit" EntityType="Self.measureUnit" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="product" EntityType="Self.product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product_unit" EntityType="Self.Product_unit" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="supplier" EntityType="Self.supplier" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="supplyingPermisionProducts" EntityType="Self.supplyingPermisionProducts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="supplyingPermission" EntityType="Self.supplyingPermission" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="warehouse" EntityType="Self.warehouse" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Contain_product" Association="Self.FK_Contain_product">
+            <End Role="product" EntitySet="product" />
+            <End Role="Contain" EntitySet="Contain" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Contain_warehouse" Association="Self.FK_Contain_warehouse">
+            <End Role="warehouse" EntitySet="warehouse" />
+            <End Role="Contain" EntitySet="Contain" />
+          </AssociationSet>
+          <AssociationSet Name="FK_customer_company" Association="Self.FK_customer_company">
+            <End Role="company" EntitySet="company" />
+            <End Role="customer" EntitySet="customer" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dismissingPermisionProducts_dismissingPermission" Association="Self.FK_dismissingPermisionProducts_dismissingPermission">
+            <End Role="dismissingPermission" EntitySet="dismissingPermission" />
+            <End Role="dismissingPermisionProducts" EntitySet="dismissingPermisionProducts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dismissingPermisionProducts_product" Association="Self.FK_dismissingPermisionProducts_product">
+            <End Role="product" EntitySet="product" />
+            <End Role="dismissingPermisionProducts" EntitySet="dismissingPermisionProducts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dismissingPermission_customer" Association="Self.FK_dismissingPermission_customer">
+            <End Role="customer" EntitySet="customer" />
+            <End Role="dismissingPermission" EntitySet="dismissingPermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dismissingPermission_warehouse" Association="Self.FK_dismissingPermission_warehouse">
+            <End Role="warehouse" EntitySet="warehouse" />
+            <End Role="dismissingPermission" EntitySet="dismissingPermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_unit_measureUnit" Association="Self.FK_Product_unit_measureUnit">
+            <End Role="measureUnit" EntitySet="measureUnit" />
+            <End Role="Product_unit" EntitySet="Product_unit" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_unit_product" Association="Self.FK_Product_unit_product">
+            <End Role="product" EntitySet="product" />
+            <End Role="Product_unit" EntitySet="Product_unit" />
+          </AssociationSet>
+          <AssociationSet Name="FK_product_warehouse" Association="Self.FK_product_warehouse">
+            <End Role="warehouse" EntitySet="warehouse" />
+            <End Role="product" EntitySet="product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_supplier_company" Association="Self.FK_supplier_company">
+            <End Role="company" EntitySet="company" />
+            <End Role="supplier" EntitySet="supplier" />
+          </AssociationSet>
+          <AssociationSet Name="FK_supplyingPermisionProducts_product" Association="Self.FK_supplyingPermisionProducts_product">
+            <End Role="product" EntitySet="product" />
+            <End Role="supplyingPermisionProducts" EntitySet="supplyingPermisionProducts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_supplyingPermisionProducts_supplyingPermission" Association="Self.FK_supplyingPermisionProducts_supplyingPermission">
+            <End Role="supplyingPermission" EntitySet="supplyingPermission" />
+            <End Role="supplyingPermisionProducts" EntitySet="supplyingPermisionProducts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_supplyingPermission_supplier" Association="Self.FK_supplyingPermission_supplier">
+            <End Role="supplier" EntitySet="supplier" />
+            <End Role="supplyingPermission" EntitySet="supplyingPermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_supplyingPermission_warehouse" Association="Self.FK_supplyingPermission_warehouse">
+            <End Role="warehouse" EntitySet="warehouse" />
+            <End Role="supplyingPermission" EntitySet="supplyingPermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_supplyingPermission_warehouse1" Association="Self.FK_supplyingPermission_warehouse1">
+            <End Role="warehouse" EntitySet="warehouse" />
+            <End Role="supplyingPermission" EntitySet="supplyingPermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_warehouse_company" Association="Self.FK_warehouse_company">
+            <End Role="company" EntitySet="company" />
+            <End Role="warehouse" EntitySet="warehouse" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="salesPointModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="company">
+          <Key>
+            <PropertyRef Name="cm_name" />
+          </Key>
+          <Property Name="cm_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="cmp_address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="customers" Relationship="Self.FK_customer_company" FromRole="company" ToRole="customer" />
+          <NavigationProperty Name="suppliers" Relationship="Self.FK_supplier_company" FromRole="company" ToRole="supplier" />
+          <NavigationProperty Name="warehouses" Relationship="Self.FK_warehouse_company" FromRole="company" ToRole="warehouse" />
+        </EntityType>
+        <EntityType Name="Contain">
+          <Key>
+            <PropertyRef Name="W_code" />
+            <PropertyRef Name="p_code" />
+          </Key>
+          <Property Name="W_code" Type="Int32" Nullable="false" />
+          <Property Name="p_code" Type="Int32" Nullable="false" />
+          <Property Name="quantity" Type="Int32" />
+          <NavigationProperty Name="product" Relationship="Self.FK_Contain_product" FromRole="Contain" ToRole="product" />
+          <NavigationProperty Name="warehouse" Relationship="Self.FK_Contain_warehouse" FromRole="Contain" ToRole="warehouse" />
+          <Property Name="transfered" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="customer">
+          <Key>
+            <PropertyRef Name="cust_id" />
+          </Key>
+          <Property Name="cust_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cust_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="cust_fax" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="cust_email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="cust_website" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="cust_phone" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="cust_mobile" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="cmp_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="company" Relationship="Self.FK_customer_company" FromRole="customer" ToRole="company" />
+          <NavigationProperty Name="dismissingPermissions" Relationship="Self.FK_dismissingPermission_customer" FromRole="customer" ToRole="dismissingPermission" />
+        </EntityType>
+        <EntityType Name="dismissingPermisionProduct">
+          <Key>
+            <PropertyRef Name="permission_id" />
+            <PropertyRef Name="p_code" />
+          </Key>
+          <Property Name="permission_id" Type="Int32" Nullable="false" />
+          <Property Name="p_code" Type="Int32" Nullable="false" />
+          <Property Name="quantity" Type="Int32" />
+          <NavigationProperty Name="dismissingPermission" Relationship="Self.FK_dismissingPermisionProducts_dismissingPermission" FromRole="dismissingPermisionProducts" ToRole="dismissingPermission" />
+          <NavigationProperty Name="product" Relationship="Self.FK_dismissingPermisionProducts_product" FromRole="dismissingPermisionProducts" ToRole="product" />
+        </EntityType>
+        <EntityType Name="dismissingPermission">
+          <Key>
+            <PropertyRef Name="permission_id" />
+          </Key>
+          <Property Name="permission_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cust_id" Type="Int32" />
+          <Property Name="w_id" Type="Int32" />
+          <NavigationProperty Name="customer" Relationship="Self.FK_dismissingPermission_customer" FromRole="dismissingPermission" ToRole="customer" />
+          <NavigationProperty Name="dismissingPermisionProducts" Relationship="Self.FK_dismissingPermisionProducts_dismissingPermission" FromRole="dismissingPermission" ToRole="dismissingPermisionProducts" />
+          <NavigationProperty Name="warehouse" Relationship="Self.FK_dismissingPermission_warehouse" FromRole="dismissingPermission" ToRole="warehouse" />
+          <Property Name="Permission_Date" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="measureUnit">
+          <Key>
+            <PropertyRef Name="m_id" />
+          </Key>
+          <Property Name="m_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="m_unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Product_unit" Relationship="Self.FK_Product_unit_measureUnit" FromRole="measureUnit" ToRole="Product_unit" />
+        </EntityType>
+        <EntityType Name="product">
+          <Key>
+            <PropertyRef Name="p_code" />
+          </Key>
+          <Property Name="p_code" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="p_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="quantity" Type="Int32" />
+          <NavigationProperty Name="Contains" Relationship="Self.FK_Contain_product" FromRole="product" ToRole="Contain" />
+          <NavigationProperty Name="dismissingPermisionProducts" Relationship="Self.FK_dismissingPermisionProducts_product" FromRole="product" ToRole="dismissingPermisionProducts" />
+          <NavigationProperty Name="Product_unit" Relationship="Self.FK_Product_unit_product" FromRole="product" ToRole="Product_unit" />
+          <NavigationProperty Name="supplyingPermisionProducts" Relationship="Self.FK_supplyingPermisionProducts_product" FromRole="product" ToRole="supplyingPermisionProducts" />
+          <Property Name="production_date" Type="DateTime" Precision="0" />
+          <Property Name="expire_duration" Type="Int32" />
+          <Property Name="w_id" Type="Int32" />
+          <NavigationProperty Name="warehouse" Relationship="salesPointModel.FK_product_warehouse" FromRole="product" ToRole="warehouse" />
+          <Property Name="transfered" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Product_unit">
+          <Key>
+            <PropertyRef Name="p_code" />
+            <PropertyRef Name="m_id" />
+          </Key>
+          <Property Name="p_code" Type="Int32" Nullable="false" />
+          <Property Name="m_id" Type="Int32" Nullable="false" />
+          <Property Name="dummy" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="measureUnit" Relationship="Self.FK_Product_unit_measureUnit" FromRole="Product_unit" ToRole="measureUnit" />
+          <NavigationProperty Name="product" Relationship="Self.FK_Product_unit_product" FromRole="Product_unit" ToRole="product" />
+        </EntityType>
+        <EntityType Name="supplier">
+          <Key>
+            <PropertyRef Name="sup_id" />
+          </Key>
+          <Property Name="sup_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sup_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sup_fax" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="sup_email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sup_website" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="sup_phone" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="sup_mobile" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="cmp_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="company" Relationship="Self.FK_supplier_company" FromRole="supplier" ToRole="company" />
+          <NavigationProperty Name="supplyingPermissions" Relationship="Self.FK_supplyingPermission_supplier" FromRole="supplier" ToRole="supplyingPermission" />
+        </EntityType>
+        <EntityType Name="supplyingPermisionProduct">
+          <Key>
+            <PropertyRef Name="permission_id" />
+            <PropertyRef Name="p_code" />
+          </Key>
+          <Property Name="permission_id" Type="Int32" Nullable="false" />
+          <Property Name="p_code" Type="Int32" Nullable="false" />
+          <Property Name="productuction_date" Type="DateTime" Precision="0" />
+          <Property Name="expire_duration" Type="Int32" />
+          <Property Name="quantity" Type="Int32" />
+          <NavigationProperty Name="product" Relationship="Self.FK_supplyingPermisionProducts_product" FromRole="supplyingPermisionProducts" ToRole="product" />
+          <NavigationProperty Name="supplyingPermission" Relationship="Self.FK_supplyingPermisionProducts_supplyingPermission" FromRole="supplyingPermisionProducts" ToRole="supplyingPermission" />
+        </EntityType>
+        <EntityType Name="supplyingPermission">
+          <Key>
+            <PropertyRef Name="permission_id" />
+          </Key>
+          <Property Name="permission_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sup_id" Type="Int32" />
+          <Property Name="w_id" Type="Int32" />
+          <Property Name="permission_date" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="supplier" Relationship="Self.FK_supplyingPermission_supplier" FromRole="supplyingPermission" ToRole="supplier" />
+          <NavigationProperty Name="supplyingPermisionProducts" Relationship="Self.FK_supplyingPermisionProducts_supplyingPermission" FromRole="supplyingPermission" ToRole="supplyingPermisionProducts" />
+          <NavigationProperty Name="warehouse" Relationship="Self.FK_supplyingPermission_warehouse" FromRole="supplyingPermission" ToRole="warehouse" />
+          <NavigationProperty Name="warehouse1" Relationship="salesPointModel.FK_supplyingPermission_warehouse1" FromRole="supplyingPermission" ToRole="warehouse" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="warehouse">
+          <Key>
+            <PropertyRef Name="w_id" />
+          </Key>
+          <Property Name="w_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="w_manager_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="w_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="w_address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="cmp_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="company" Relationship="Self.FK_warehouse_company" FromRole="warehouse" ToRole="company" />
+          <NavigationProperty Name="Contains" Relationship="Self.FK_Contain_warehouse" FromRole="warehouse" ToRole="Contain" />
+          <NavigationProperty Name="dismissingPermissions" Relationship="Self.FK_dismissingPermission_warehouse" FromRole="warehouse" ToRole="dismissingPermission" />
+          <NavigationProperty Name="supplyingPermissions" Relationship="Self.FK_supplyingPermission_warehouse" FromRole="warehouse" ToRole="supplyingPermission" />
+          <NavigationProperty Name="products" Relationship="salesPointModel.FK_product_warehouse" FromRole="warehouse" ToRole="product" />
+          <NavigationProperty Name="supplyingPermissions1" Relationship="salesPointModel.FK_supplyingPermission_warehouse1" FromRole="warehouse" ToRole="supplyingPermission" />
+          </EntityType>
+        <Association Name="FK_customer_company">
+          <End Role="company" Type="Self.company" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="customer" Type="Self.customer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="company">
+              <PropertyRef Name="cm_name" />
+            </Principal>
+            <Dependent Role="customer">
+              <PropertyRef Name="cmp_name" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_supplier_company">
+          <End Role="company" Type="Self.company" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="supplier" Type="Self.supplier" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="company">
+              <PropertyRef Name="cm_name" />
+            </Principal>
+            <Dependent Role="supplier">
+              <PropertyRef Name="cmp_name" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_warehouse_company">
+          <End Role="company" Type="Self.company" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="warehouse" Type="Self.warehouse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="company">
+              <PropertyRef Name="cm_name" />
+            </Principal>
+            <Dependent Role="warehouse">
+              <PropertyRef Name="cmp_name" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Contain_product">
+          <End Role="product" Type="Self.product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Contain" Type="Self.Contain" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="product">
+              <PropertyRef Name="p_code" />
+            </Principal>
+            <Dependent Role="Contain">
+              <PropertyRef Name="p_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Contain_warehouse">
+          <End Role="warehouse" Type="Self.warehouse" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Contain" Type="Self.Contain" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="warehouse">
+              <PropertyRef Name="w_id" />
+            </Principal>
+            <Dependent Role="Contain">
+              <PropertyRef Name="W_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dismissingPermission_customer">
+          <End Role="customer" Type="Self.customer" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="dismissingPermission" Type="Self.dismissingPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="customer">
+              <PropertyRef Name="cust_id" />
+            </Principal>
+            <Dependent Role="dismissingPermission">
+              <PropertyRef Name="cust_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dismissingPermisionProducts_dismissingPermission">
+          <End Role="dismissingPermission" Type="Self.dismissingPermission" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="dismissingPermisionProducts" Type="Self.dismissingPermisionProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="dismissingPermission">
+              <PropertyRef Name="permission_id" />
+            </Principal>
+            <Dependent Role="dismissingPermisionProducts">
+              <PropertyRef Name="permission_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dismissingPermisionProducts_product">
+          <End Role="product" Type="Self.product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="dismissingPermisionProducts" Type="Self.dismissingPermisionProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="product">
+              <PropertyRef Name="p_code" />
+            </Principal>
+            <Dependent Role="dismissingPermisionProducts">
+              <PropertyRef Name="p_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dismissingPermission_warehouse">
+          <End Role="warehouse" Type="Self.warehouse" Multiplicity="0..1" />
+          <End Role="dismissingPermission" Type="Self.dismissingPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="warehouse">
+              <PropertyRef Name="w_id" />
+            </Principal>
+            <Dependent Role="dismissingPermission">
+              <PropertyRef Name="w_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_unit_measureUnit">
+          <End Role="measureUnit" Type="Self.measureUnit" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Product_unit" Type="Self.Product_unit" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="measureUnit">
+              <PropertyRef Name="m_id" />
+            </Principal>
+            <Dependent Role="Product_unit">
+              <PropertyRef Name="m_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_unit_product">
+          <End Role="product" Type="Self.product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Product_unit" Type="Self.Product_unit" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="product">
+              <PropertyRef Name="p_code" />
+            </Principal>
+            <Dependent Role="Product_unit">
+              <PropertyRef Name="p_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_supplyingPermisionProducts_product">
+          <End Role="product" Type="Self.product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="supplyingPermisionProducts" Type="Self.supplyingPermisionProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="product">
+              <PropertyRef Name="p_code" />
+            </Principal>
+            <Dependent Role="supplyingPermisionProducts">
+              <PropertyRef Name="p_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_supplyingPermission_supplier">
+          <End Role="supplier" Type="Self.supplier" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="supplyingPermission" Type="Self.supplyingPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="supplier">
+              <PropertyRef Name="sup_id" />
+            </Principal>
+            <Dependent Role="supplyingPermission">
+              <PropertyRef Name="sup_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_supplyingPermisionProducts_supplyingPermission">
+          <End Role="supplyingPermission" Type="Self.supplyingPermission" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="supplyingPermisionProducts" Type="Self.supplyingPermisionProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="supplyingPermission">
+              <PropertyRef Name="permission_id" />
+            </Principal>
+            <Dependent Role="supplyingPermisionProducts">
+              <PropertyRef Name="permission_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_supplyingPermission_warehouse">
+          <End Role="warehouse" Type="Self.warehouse" Multiplicity="0..1" />
+          <End Role="supplyingPermission" Type="Self.supplyingPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="warehouse">
+              <PropertyRef Name="w_id" />
+            </Principal>
+            <Dependent Role="supplyingPermission">
+              <PropertyRef Name="w_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="salesPointEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="companies" EntityType="Self.company" />
+          <EntitySet Name="Contains" EntityType="Self.Contain" />
+          <EntitySet Name="customers" EntityType="Self.customer" />
+          <EntitySet Name="dismissingPermisionProducts" EntityType="Self.dismissingPermisionProduct" />
+          <EntitySet Name="dismissingPermissions" EntityType="Self.dismissingPermission" />
+          <EntitySet Name="measureUnits" EntityType="Self.measureUnit" />
+          <EntitySet Name="products" EntityType="Self.product" />
+          <EntitySet Name="Product_unit" EntityType="Self.Product_unit" />
+          <EntitySet Name="suppliers" EntityType="Self.supplier" />
+          <EntitySet Name="supplyingPermisionProducts" EntityType="Self.supplyingPermisionProduct" />
+          <EntitySet Name="supplyingPermissions" EntityType="Self.supplyingPermission" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="warehouses" EntityType="Self.warehouse" />
+          <AssociationSet Name="FK_customer_company" Association="Self.FK_customer_company">
+            <End Role="company" EntitySet="companies" />
+            <End Role="customer" EntitySet="customers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_supplier_company" Association="Self.FK_supplier_company">
+            <End Role="company" EntitySet="companies" />
+            <End Role="supplier" EntitySet="suppliers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_warehouse_company" Association="Self.FK_warehouse_company">
+            <End Role="company" EntitySet="companies" />
+            <End Role="warehouse" EntitySet="warehouses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Contain_product" Association="Self.FK_Contain_product">
+            <End Role="product" EntitySet="products" />
+            <End Role="Contain" EntitySet="Contains" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Contain_warehouse" Association="Self.FK_Contain_warehouse">
+            <End Role="warehouse" EntitySet="warehouses" />
+            <End Role="Contain" EntitySet="Contains" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dismissingPermission_customer" Association="Self.FK_dismissingPermission_customer">
+            <End Role="customer" EntitySet="customers" />
+            <End Role="dismissingPermission" EntitySet="dismissingPermissions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dismissingPermisionProducts_dismissingPermission" Association="Self.FK_dismissingPermisionProducts_dismissingPermission">
+            <End Role="dismissingPermission" EntitySet="dismissingPermissions" />
+            <End Role="dismissingPermisionProducts" EntitySet="dismissingPermisionProducts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dismissingPermisionProducts_product" Association="Self.FK_dismissingPermisionProducts_product">
+            <End Role="product" EntitySet="products" />
+            <End Role="dismissingPermisionProducts" EntitySet="dismissingPermisionProducts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dismissingPermission_warehouse" Association="Self.FK_dismissingPermission_warehouse">
+            <End Role="warehouse" EntitySet="warehouses" />
+            <End Role="dismissingPermission" EntitySet="dismissingPermissions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_unit_measureUnit" Association="Self.FK_Product_unit_measureUnit">
+            <End Role="measureUnit" EntitySet="measureUnits" />
+            <End Role="Product_unit" EntitySet="Product_unit" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_unit_product" Association="Self.FK_Product_unit_product">
+            <End Role="product" EntitySet="products" />
+            <End Role="Product_unit" EntitySet="Product_unit" />
+          </AssociationSet>
+          <AssociationSet Name="FK_supplyingPermisionProducts_product" Association="Self.FK_supplyingPermisionProducts_product">
+            <End Role="product" EntitySet="products" />
+            <End Role="supplyingPermisionProducts" EntitySet="supplyingPermisionProducts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_supplyingPermission_supplier" Association="Self.FK_supplyingPermission_supplier">
+            <End Role="supplier" EntitySet="suppliers" />
+            <End Role="supplyingPermission" EntitySet="supplyingPermissions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_supplyingPermisionProducts_supplyingPermission" Association="Self.FK_supplyingPermisionProducts_supplyingPermission">
+            <End Role="supplyingPermission" EntitySet="supplyingPermissions" />
+            <End Role="supplyingPermisionProducts" EntitySet="supplyingPermisionProducts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_supplyingPermission_warehouse" Association="Self.FK_supplyingPermission_warehouse">
+            <End Role="warehouse" EntitySet="warehouses" />
+            <End Role="supplyingPermission" EntitySet="supplyingPermissions" />
+          </AssociationSet>
+          <FunctionImport Name="sp_alterdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_creatediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_dropdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(salesPointModel.sp_helpdiagramdefinition_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(salesPointModel.sp_helpdiagrams_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_renamediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="new_diagramname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_upgraddiagrams" />
+          <AssociationSet Name="FK_product_warehouse" Association="salesPointModel.FK_product_warehouse">
+            <End Role="warehouse" EntitySet="warehouses" />
+            <End Role="product" EntitySet="products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_supplyingPermission_warehouse1" Association="salesPointModel.FK_supplyingPermission_warehouse1">
+            <End Role="warehouse" EntitySet="warehouses" />
+            <End Role="supplyingPermission" EntitySet="supplyingPermissions" />
+          </AssociationSet>
+          </EntityContainer>
+        <ComplexType Name="sp_helpdiagramdefinition_Result">
+          <Property Type="Int32" Name="version" Nullable="true" />
+          <Property Type="Binary" Name="definition" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagrams_Result">
+          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+          <Property Type="Int32" Name="OwnerID" Nullable="false" />
+        </ComplexType>
+        <Association Name="FK_product_warehouse">
+          <End Type="salesPointModel.warehouse" Role="warehouse" Multiplicity="0..1" />
+          <End Type="salesPointModel.product" Role="product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="warehouse">
+              <PropertyRef Name="w_id" />
+            </Principal>
+            <Dependent Role="product">
+              <PropertyRef Name="w_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_supplyingPermission_warehouse1">
+          <End Type="salesPointModel.warehouse" Role="warehouse" Multiplicity="0..1" />
+          <End Type="salesPointModel.supplyingPermission" Role="supplyingPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="warehouse">
+              <PropertyRef Name="w_id" />
+            </Principal>
+            <Dependent Role="supplyingPermission">
+              <PropertyRef Name="sup_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="salesPointModelStoreContainer" CdmEntityContainer="salesPointEntities1">
+          <EntitySetMapping Name="companies">
+            <EntityTypeMapping TypeName="salesPointModel.company">
+              <MappingFragment StoreEntitySet="company">
+                <ScalarProperty Name="cm_name" ColumnName="cm_name" />
+                <ScalarProperty Name="cmp_address" ColumnName="cmp_address" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Contains">
+            <EntityTypeMapping TypeName="salesPointModel.Contain">
+              <MappingFragment StoreEntitySet="Contain">
+                <ScalarProperty Name="transfered" ColumnName="transfered" />
+                <ScalarProperty Name="W_code" ColumnName="W_code" />
+                <ScalarProperty Name="p_code" ColumnName="p_code" />
+                <ScalarProperty Name="quantity" ColumnName="quantity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="customers">
+            <EntityTypeMapping TypeName="salesPointModel.customer">
+              <MappingFragment StoreEntitySet="customer">
+                <ScalarProperty Name="cust_id" ColumnName="cust_id" />
+                <ScalarProperty Name="cust_name" ColumnName="cust_name" />
+                <ScalarProperty Name="cust_fax" ColumnName="cust_fax" />
+                <ScalarProperty Name="cust_email" ColumnName="cust_email" />
+                <ScalarProperty Name="cust_website" ColumnName="cust_website" />
+                <ScalarProperty Name="cust_phone" ColumnName="cust_phone" />
+                <ScalarProperty Name="cust_mobile" ColumnName="cust_mobile" />
+                <ScalarProperty Name="cmp_name" ColumnName="cmp_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="dismissingPermisionProducts">
+            <EntityTypeMapping TypeName="salesPointModel.dismissingPermisionProduct">
+              <MappingFragment StoreEntitySet="dismissingPermisionProducts">
+                <ScalarProperty Name="permission_id" ColumnName="permission_id" />
+                <ScalarProperty Name="p_code" ColumnName="p_code" />
+                <ScalarProperty Name="quantity" ColumnName="quantity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="dismissingPermissions">
+            <EntityTypeMapping TypeName="salesPointModel.dismissingPermission">
+              <MappingFragment StoreEntitySet="dismissingPermission">
+                <ScalarProperty Name="Permission_Date" ColumnName="Permission_Date" />
+                <ScalarProperty Name="permission_id" ColumnName="permission_id" />
+                <ScalarProperty Name="cust_id" ColumnName="cust_id" />
+                <ScalarProperty Name="w_id" ColumnName="w_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="measureUnits">
+            <EntityTypeMapping TypeName="salesPointModel.measureUnit">
+              <MappingFragment StoreEntitySet="measureUnit">
+                <ScalarProperty Name="m_id" ColumnName="m_id" />
+                <ScalarProperty Name="m_unit" ColumnName="m_unit" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="products">
+            <EntityTypeMapping TypeName="salesPointModel.product">
+              <MappingFragment StoreEntitySet="product">
+                <ScalarProperty Name="transfered" ColumnName="transfered" />
+                <ScalarProperty Name="w_id" ColumnName="w_id" />
+                <ScalarProperty Name="expire_duration" ColumnName="expire_duration" />
+                <ScalarProperty Name="production_date" ColumnName="production_date" />
+                <ScalarProperty Name="p_code" ColumnName="p_code" />
+                <ScalarProperty Name="p_name" ColumnName="p_name" />
+                <ScalarProperty Name="quantity" ColumnName="quantity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Product_unit">
+            <EntityTypeMapping TypeName="salesPointModel.Product_unit">
+              <MappingFragment StoreEntitySet="Product_unit">
+                <ScalarProperty Name="p_code" ColumnName="p_code" />
+                <ScalarProperty Name="m_id" ColumnName="m_id" />
+                <ScalarProperty Name="dummy" ColumnName="dummy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="suppliers">
+            <EntityTypeMapping TypeName="salesPointModel.supplier">
+              <MappingFragment StoreEntitySet="supplier">
+                <ScalarProperty Name="sup_id" ColumnName="sup_id" />
+                <ScalarProperty Name="sup_name" ColumnName="sup_name" />
+                <ScalarProperty Name="sup_fax" ColumnName="sup_fax" />
+                <ScalarProperty Name="sup_email" ColumnName="sup_email" />
+                <ScalarProperty Name="sup_website" ColumnName="sup_website" />
+                <ScalarProperty Name="sup_phone" ColumnName="sup_phone" />
+                <ScalarProperty Name="sup_mobile" ColumnName="sup_mobile" />
+                <ScalarProperty Name="cmp_name" ColumnName="cmp_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="supplyingPermisionProducts">
+            <EntityTypeMapping TypeName="salesPointModel.supplyingPermisionProduct">
+              <MappingFragment StoreEntitySet="supplyingPermisionProducts">
+                <ScalarProperty Name="permission_id" ColumnName="permission_id" />
+                <ScalarProperty Name="p_code" ColumnName="p_code" />
+                <ScalarProperty Name="productuction_date" ColumnName="productuction_date" />
+                <ScalarProperty Name="expire_duration" ColumnName="expire_duration" />
+                <ScalarProperty Name="quantity" ColumnName="quantity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="supplyingPermissions">
+            <EntityTypeMapping TypeName="salesPointModel.supplyingPermission">
+              <MappingFragment StoreEntitySet="supplyingPermission">
+                <ScalarProperty Name="permission_id" ColumnName="permission_id" />
+                <ScalarProperty Name="sup_id" ColumnName="sup_id" />
+                <ScalarProperty Name="w_id" ColumnName="w_id" />
+                <ScalarProperty Name="permission_date" ColumnName="permission_date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="salesPointModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="warehouses">
+            <EntityTypeMapping TypeName="salesPointModel.warehouse">
+              <MappingFragment StoreEntitySet="warehouse">
+                <ScalarProperty Name="w_id" ColumnName="w_id" />
+                <ScalarProperty Name="w_manager_name" ColumnName="w_manager_name" />
+                <ScalarProperty Name="w_name" ColumnName="w_name" />
+                <ScalarProperty Name="w_address" ColumnName="w_address" />
+                <ScalarProperty Name="cmp_name" ColumnName="cmp_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="salesPointModel.Store.sp_alterdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="salesPointModel.Store.sp_creatediagram" />
+          <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="salesPointModel.Store.sp_dropdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="salesPointModel.Store.sp_helpdiagramdefinition">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="salesPointModel.sp_helpdiagramdefinition_Result">
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="salesPointModel.Store.sp_helpdiagrams">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="salesPointModel.sp_helpdiagrams_Result">
+                <ScalarProperty Name="Database" ColumnName="Database" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="salesPointModel.Store.sp_renamediagram" />
+          <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="salesPointModel.Store.sp_upgraddiagrams" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

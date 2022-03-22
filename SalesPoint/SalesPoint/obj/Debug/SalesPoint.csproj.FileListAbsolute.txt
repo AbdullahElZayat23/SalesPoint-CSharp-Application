@@ -1,0 +1,206 @@
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\SalesPoint.exe.config
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\SalesPoint.exe
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\SalesPoint.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\EntityFramework.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\EntityFramework.SqlServer.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\EntityFramework.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\EntityFramework.SqlServer.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\obj\Debug\SalesPoint.Properties.Resources.resources
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\obj\Debug\SalesPoint.csproj.GenerateResource.cache
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\obj\Debug\SalesPoint.csproj.CoreCompileInputs.cache
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\obj\Debug\SalesPoint.csproj.CopyComplete
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\obj\Debug\SalesPoint.exe
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\obj\Debug\SalesPoint.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\obj\Debug\SalesPoint.Home.resources
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\obj\Debug\SalesPoint.AddSupplyNoteProducts.resources
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\obj\Debug\SalesPoint.AddDismissNoteProducts.resources
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\AxShockwaveFlashObjects.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.Shared.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\ShockwaveFlashObjects.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\stdole.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\LibExcel.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Microsoft.Web.WebView2.Core.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Base.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Blockly.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.BlocklyEditor.Wpf.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Controls.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Controls.Win.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Data.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Database.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Design.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Editor.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Map.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.MathFX.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Check.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Design.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Helper.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Web.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Win.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Svg.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\ADODB.dll
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Microsoft.Web.WebView2.Core.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Base.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Base.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Blockly.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Blockly.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.BlocklyEditor.Wpf.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.BlocklyEditor.Wpf.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Controls.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Controls.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Controls.Win.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Controls.Win.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Data.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Data.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Database.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Database.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Design.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Design.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Editor.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Editor.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Map.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Map.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.MathFX.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.MathFX.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Check.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Check.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Design.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Design.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Helper.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Helper.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Web.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Web.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Win.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Win.xml
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Svg.pdb
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\obj\Debug\SalesPoint.csproj.AssemblyReference.cache
+D:\ITI Projects\SalesPoint C#\SalesPoint\SalesPoint\obj\Debug\SalesPoint.csproj.SuggestedBindingRedirects.cache
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\SalesPoint.exe.config
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\SalesPoint.exe
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\SalesPoint.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\AxShockwaveFlashObjects.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.Shared.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\EntityFramework.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\EntityFramework.SqlServer.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\LibExcel.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Microsoft.Web.WebView2.Core.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Base.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Blockly.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.BlocklyEditor.Wpf.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Controls.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Controls.Win.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Data.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Database.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Design.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Editor.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Map.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.MathFX.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Check.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Design.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Helper.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Web.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Win.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Svg.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\ShockwaveFlashObjects.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\ADODB.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\stdole.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\EntityFramework.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\EntityFramework.SqlServer.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Microsoft.Web.WebView2.Core.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Base.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Base.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Blockly.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Blockly.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.BlocklyEditor.Wpf.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.BlocklyEditor.Wpf.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Controls.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Controls.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Controls.Win.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Controls.Win.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Data.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Data.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Database.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Database.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Design.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Design.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Editor.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Editor.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Map.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Map.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.MathFX.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.MathFX.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Check.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Check.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Design.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Design.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Helper.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Helper.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Web.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Web.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Win.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Report.Win.xml
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\bin\Debug\Stimulsoft.Svg.pdb
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\obj\Debug\SalesPoint.csproj.AssemblyReference.cache
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\obj\Debug\SalesPoint.csproj.SuggestedBindingRedirects.cache
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\obj\Debug\SalesPoint.AddDismissNoteProducts.resources
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\obj\Debug\SalesPoint.AddSupplyNoteProducts.resources
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\obj\Debug\SalesPoint.Home.resources
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\obj\Debug\SalesPoint.Properties.Resources.resources
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\obj\Debug\SalesPoint.csproj.GenerateResource.cache
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\obj\Debug\SalesPoint.csproj.CoreCompileInputs.cache
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\obj\Debug\SalesPoint.csproj.CopyComplete
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\obj\Debug\SalesPoint.exe
+D:\ITI Projects\SalesPoint-CSharp-Application\SalesPoint\SalesPoint\obj\Debug\SalesPoint.pdb

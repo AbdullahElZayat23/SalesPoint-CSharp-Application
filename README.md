@@ -21,6 +21,7 @@ An app for managing company warehouse' products.
 ## How to use
 
 Download and run with Visual studio.
+Database included , restore it then run the application.
 
 
 
